@@ -5,7 +5,7 @@ public class dictionaryWrite {
         try {
 
             Scanner scanner = new Scanner(System.in);
-            String scannerOutput = scanner.next();
+            String scannerOutput = scanner.nextLine();
             System.out.println(scannerOutput + "saved to file");
             BufferedWriter bw = new BufferedWriter(new FileWriter("dictionaryTXT.txt", true));
             bw.write(scannerOutput);
@@ -15,4 +15,4 @@ public class dictionaryWrite {
             err.printStackTrace();
         }
     }
-}
+} tho 
