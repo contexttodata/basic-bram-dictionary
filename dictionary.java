@@ -4,6 +4,7 @@ class dictionary
 {
     public static void main(String args[])
     {
+        dictionaryWrite.main;
         int i;
         boolean flag = false;
         String sub, sub2, strf;
