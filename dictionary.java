@@ -6,7 +6,7 @@ class dictionary
     {
         int i;
         boolean flag = false;
-        String sub, strf;
+        String sub, sub2, strf;
         System.out.println("Hello i am bram defination library or B.D.L you can use type a word in and bram will tell you what he thinks");
         try
         {
@@ -19,9 +19,11 @@ class dictionary
             {
                 i = strf.indexOf(":");
                 sub = strf.substring(0,i);
+                sub2 = strf.substring(i+1,strf.length());
                 if(str.equals(sub))
                 {
-                    System.out.println(strf);
+                    //String[] splited = strf.split(":");
+                    System.out.println(sub2);
                     flag=true;
                 }
 
@@ -37,11 +39,4 @@ class dictionary
             e.printStackTrace();
         }
     }
-    /*public Boolean error(Boolean flag) {
-        if(!flag) {
-            System.out.println("dosent look like anything to me");
-
     }
-    return true;
-    }*/
-}
